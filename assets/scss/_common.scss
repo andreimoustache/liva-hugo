@@ -61,6 +61,10 @@ a:hover {
   padding-top: 150px;
   padding-bottom: 150px;
 
+  &-empty {
+    padding: 50px;
+  }
+
   &-sm {
     padding-top: 80px;
     padding-bottom: 80px;
