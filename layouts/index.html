@@ -41,6 +41,7 @@
 <!-- /featured post -->
 
 <!-- recent post -->
+{{- if (eq (.Site.Params.hideRecentPostsRow | default false) false) }}
 <section>
   <div class="container">
     <div class="row">
@@ -67,6 +68,7 @@
     </div>
   </div>
 </section>
+{{- end }}
 <!-- /recent post -->
 
 <!-- blog post -->
