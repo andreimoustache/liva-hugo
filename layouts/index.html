@@ -1,12 +1,14 @@
 {{ define "main" }}
 
 <!-- featured post -->
+{{- $featured := ( where .Site.RegularPages "Type" "featured" ) }}
 <section class="section-sm">
+  {{- with $featured }}
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-10 featured-post-slider">
         <!-- slider item -->
-        {{ range ( where .Site.RegularPages "Type" "featured" )}}
+        {{ range $featured }}
         <article class="card featured-post">
           <div class="row no-gutters align-items-center">
             <div class="col-md-5">
@@ -34,6 +36,7 @@
       </div>
     </div>
   </div>
+  {{- end }}
 </section>
 <!-- /featured post -->
 
