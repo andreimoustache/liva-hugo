@@ -2,7 +2,7 @@
 
 <!-- featured post -->
 {{- $featured := ( where .Site.RegularPages "Type" "featured" ) }}
-<section class="section-sm">
+<section class="{{ cond  (eq (len $featured) 0) `section-empty` `section-sm` }}">
   {{- with $featured }}
   <div class="container">
     <div class="row justify-content-center">
