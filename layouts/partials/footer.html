@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
+        <a href="{{ .Site.BaseURL | relLangURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">{{ T "footer_contact_heaader" }}</h6>
@@ -63,7 +63,7 @@
         <h6 class="mb-4">{{ T "footer_links_header" }}</h6>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
-          <li class="mb-3"><a class="text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          <li class="mb-3"><a class="text-dark" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
@@ -75,7 +75,7 @@
 </footer>
 
 <script>
-  var indexURL = {{ "index.json" | absURL }}
+  var indexURL = {{ "index.json" | absLangURL }}
 </script>
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
