@@ -1,6 +1,18 @@
 [header_search_placeholder]
     other = "Type & Hit Enter..."
 
+[sidebar_about_more]
+    other = "Know More"
+
+[sidebar_categories_header]
+    other = "Categories"
+
+[sidebar_tags_header]
+    other = "Tags"
+
+[sidebar_social_header]
+    other = "Social"
+
 [newsletter_subscribe_button]
     other = "Subscribe"
 
