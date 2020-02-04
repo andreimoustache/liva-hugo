@@ -4,6 +4,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
+        <h2>{{ .Title | markdownify }}</h2>
         <div id="search-results"></div>
         <script id="search-result-template" type="text/x-js-template">
           <div class="py-4 border-bottom" id="summary-${key}">
