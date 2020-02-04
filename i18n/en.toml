@@ -1,0 +1,17 @@
+[newsletter_subscribe_button]
+    other = "Subscribe"
+
+[newsletter_subscribe_email]
+    other = "Your Email Address"
+
+[footer_contact_header]
+    other = "Contact Me"
+
+[footer_social_header]
+    other = "Social Contacts"
+
+[footer_categories_header]
+    other = "Categories"
+
+[footer_links_header]
+    other = "Quick Links"
