@@ -3,7 +3,7 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom">
-      <a class="navbar-brand mobile-view" href="{{ .Site.BaseURL }}"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid"
           src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
@@ -20,12 +20,12 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="{{ .Site.BaseURL }}"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid"
             src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            <a class="nav-link" href="{{ .Site.BaseURL | relLangURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
           {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
@@ -53,8 +53,8 @@
         <div class="search px-4">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="{{ .Site.BaseURL }}/search" class="h-100">
-              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            <form action="{{ .Site.BaseURL | relLangURL }}/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="{{ T "header_search_placeholder" }}">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
           </div>

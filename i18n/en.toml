@@ -1,0 +1,38 @@
+[header_search_placeholder]
+    other = "Type & Hit Enter..."
+
+[sidebar_about_more]
+    other = "Know More"
+
+[sidebar_categories_header]
+    other = "Categories"
+
+[sidebar_tags_header]
+    other = "Tags"
+
+[sidebar_social_header]
+    other = "Social"
+
+[newsletter_subscribe_button]
+    other = "Subscribe"
+
+[newsletter_subscribe_email]
+    other = "Your Email Address"
+
+[footer_contact_header]
+    other = "Contact Me"
+
+[footer_social_header]
+    other = "Social Contacts"
+
+[footer_categories_header]
+    other = "Categories"
+
+[footer_links_header]
+    other = "Quick Links"
+
+[post_read_more]
+    other = "read more"
+
+[about_gallery_header]
+    other = "My Gallery"
