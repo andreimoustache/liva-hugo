@@ -33,3 +33,6 @@
 
 [post_read_more]
     other = "read more"
+
+[about_gallery_header]
+    other = "My Gallery"
