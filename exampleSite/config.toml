@@ -102,6 +102,17 @@ hideRecentPostsRow = false # optional, defaults to false
   [params.search]
   enable = true
 
+  [params.cookieconsent]
+    theme = "edgeless"
+    position = "bottom-right"
+    message = "Acest site folosește cookie-uri. Continuarea navigării reprezintă acceptul tău pentru această folosință."
+    dismiss = "Am înțeles!"
+    link = "Citește mai multe"
+    popupbackground = "#efefef"
+    popuptext = "#404040"
+    buttonbackground = "#8ec760"
+    buttontext = "#fff"
+
 ############################ news letter ########################
 [params.newsletter]
 enable = true
