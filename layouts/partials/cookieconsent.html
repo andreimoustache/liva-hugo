@@ -1,0 +1,34 @@
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+const popupbackground = '{{ default "#000" .popupbackground }}';
+const popuptext = '{{ default "#fff" .popuptext }}';
+const buttonbackground = '{{ default "#f1d600" .buttonbackground }}';
+const buttontext = '{{ default "#000" .buttontext }}';
+const theme = '{{ default "classic" .theme }}';
+const position = '{{ default "bottom-right" .position }}';
+const message = '{{ default "This website uses cookies to ensure you get the best experience on our website." .message }}';
+const dismiss = '{{ default "Got it!" .dismiss }}';
+const link = '{{ default "Learn more" .link }}';
+const href = '{{ default "https://www.cookiesandyou.com/" .href }}';
+
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": popupbackground,
+      "text": popuptext
+    },
+    "button": {
+      "background": buttonbackground,
+      "text": buttontext
+    }
+  },
+  "theme": theme,
+  "position": position,
+  "content": {
+    "message": message,
+    "dismiss": dismiss,
+    "link": link,
+    "href": href
+  }
+});
+</script>

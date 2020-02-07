@@ -118,4 +118,8 @@
 </section>
 <!-- /blog post -->
 
+{{- if isset .Site.Params "cookieconsent" }}
+{{- partial "cookieconsent.html" .Site.Params.cookieconsent }}
+{{- end }}
+
 {{ end }}
